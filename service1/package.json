@@ -1,6 +1,6 @@
 {
-  "name": "@e-lyceum/common-backend",
-  "description": "E lyceum common backend",
+  "name": "service2",
+  "description": "service2",
   "version": "0.0.1",
   "private": true,
   "engines": {

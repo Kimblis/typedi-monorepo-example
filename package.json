@@ -1,19 +1,14 @@
 {
-  "name": "e-lyceum",
+  "name": "typedi-monorepo-problem-example",
   "version": "0.0.1",
-  "description": "E lyceum mono repo",
+  "description": "monorepo example",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Softeta/e-lyceum.git"
+    "url": "git+https://github.com/Kimblis/typedi-monorepo-example.git"
   },
-  "author": "Softeta",
+  "author": "Kimblis",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Softeta/e-lyceum/issues"
-  },
-  "homepage": "https://github.com/Softeta/e-lyceum#readme",
-  "private": "true",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
