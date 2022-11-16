@@ -1,0 +1,75 @@
+{
+  "extends": "../.eslintrc.yml",
+  "parserOptions": { "project": ["./tsconfig.json"], "sourceType": "module" },
+  "rules": {
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "no-new": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "jest/no-done-callback": "off",
+    "no-underscore-dangle": "off",
+    "lines-between-class-members": "off",
+    "consistent-return": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-console": "off",
+    "no-shadow": "off",
+    "object-curly-spacing": ["error", "always"],
+    "no-non-null-assertion": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-throw-literal": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "@typescript-eslint/indent": "off",
+    "import/no-unresolved": "error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "js": "never",
+        "": "never"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external"], "parent", "sibling"],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "**",
+            "group": "parent"
+          }
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/extensions": [".ts"],
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      },
+      "node": {
+        "extensions": [".ts"],
+        "paths": ["src"]
+      },
+      "alias": {
+        "map": [["#service1", "../service1"]],
+        "extensions": [".ts"],
+        "project": "./tsconfig.json"
+      }
+    }
+  }
+}

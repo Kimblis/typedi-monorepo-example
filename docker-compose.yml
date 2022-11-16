@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  app_local:
+    env_file:
+      - ./service1/.env.docker-compose
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    command: bash -c "(cd /app/service2 && npm run dev)"
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    working_dir: /app
+    ports:
+      - 2095:2095
+volumes:
+  redis-data:

@@ -1,0 +1,29 @@
+{
+  "name": "@e-lyceum/common-backend",
+  "description": "E lyceum common backend",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">= 16.18.0"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint services"
+  },
+  "dependencies": {
+    "@types/validator": "^13.7.10",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.5",
+    "eslint": "^8.26.0",
+    "eslint-config-typescript-nodejs": "^3.3.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

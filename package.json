@@ -1,0 +1,37 @@
+{
+  "name": "e-lyceum",
+  "version": "0.0.1",
+  "description": "E lyceum mono repo",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Softeta/e-lyceum.git"
+  },
+  "author": "Softeta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Softeta/e-lyceum/issues"
+  },
+  "homepage": "https://github.com/Softeta/e-lyceum#readme",
+  "private": "true",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@types/validator": "^13.7.10"
+  }
+}
